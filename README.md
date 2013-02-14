@@ -35,9 +35,16 @@ EXAMPLE:
     [ax,h3]=suplabel('super Title' ,'t'); 
     set(h3,'FontSize',30) 
   
-SEE ALSO: text, title, xlabel, ylabel, zlabel, subplot, 
+SEE ALSO: [text][], [title][], [xlabel][], [ylabel][], [zlabel][], [subplot][], 
             suptitle (Matlab Central)
 
 
 
 [suplabel]: http://www.mathworks.co.uk/matlabcentral/fileexchange/7772-suplabel/
+[text]: http://www.mathworks.co.uk/help/matlab/ref/text.html
+[title]: http://www.mathworks.co.uk/help/matlab/ref/title.html
+[xlabel]: http://www.mathworks.co.uk/help/matlab/ref/xlabel.html
+[ylabel]: http://www.mathworks.co.uk/help/matlab/ref/ylabel.html
+[zlabel]: http://www.mathworks.co.uk/help/matlab/ref/zlabel.html
+[subplot]: http://www.mathworks.co.uk/help/matlab/ref/subplot.html
+[suptitle]: 
