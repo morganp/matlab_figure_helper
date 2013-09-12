@@ -8,15 +8,19 @@ Originally released in 03 Jun 2005 by Ben Barrowes
 Usage
 --
 
-PLaces text as a title, xlabel, or ylabel on a group of subplots. Returns a handle to the label and a handle to the axis.
+It is imported as a package into your script or projects. Packages require the parent folder to be added to the search path.
 
+Places text as a title, xlabel, or ylabel on a group of subplots. Returns a handle to the label and a handle to the axis.
 
-    [ax,h]=suplabel(text,whichLabel,supAxes)
+    addpath('your_path_here/matlab_suplabel/package/');
+    import suplabel_pkg.*
+
+    [ax,h]=suplabel_pkg.suplabel(text,whichLabel,supAxes)
 
 returns handles to both the axis and the label.
 
 
-    ax=suplabel(text,whichLabel,supAxes)
+    ax==suplabel_pkg.suplabel(text,whichLabel,supAxes)
 
 returns a handle to the axis only. suplabel(text) with one input argument assumes whichLabel='x'
 
@@ -30,9 +34,9 @@ EXAMPLE:
     subplot(2,2,2);ylabel('ylabel2');title('title2') 
     subplot(2,2,3);ylabel('ylabel3');xlabel('xlabel3') 
     subplot(2,2,4);ylabel('ylabel4');xlabel('xlabel4') 
-    [ax,h1]=suplabel('super X label'); 
-    [ax,h2]=suplabel('super Y label','y'); 
-    [ax,h3]=suplabel('super Title' ,'t'); 
+    [ax,h1]=suplabel_pkg.suplabel('super X label'); 
+    [ax,h2]=suplabel_pkg.suplabel('super Y label','y'); 
+    [ax,h3]=suplabel_pkg.suplabel('super Title' ,'t'); 
     set(h3,'FontSize',30) 
   
 SEE ALSO: [text][], [title][], [xlabel][], [ylabel][], [zlabel][], [subplot][], 
@@ -47,4 +51,3 @@ SEE ALSO: [text][], [title][], [xlabel][], [ylabel][], [zlabel][], [subplot][],
 [ylabel]: http://www.mathworks.co.uk/help/matlab/ref/ylabel.html
 [zlabel]: http://www.mathworks.co.uk/help/matlab/ref/zlabel.html
 [subplot]: http://www.mathworks.co.uk/help/matlab/ref/subplot.html
-[suptitle]: 
