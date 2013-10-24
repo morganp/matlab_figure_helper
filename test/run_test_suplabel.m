@@ -4,10 +4,10 @@ clear;
 clear import;
 
 %% Add package to path (+function folder must be on path)
-addpath('../../package/');
+addpath('../package/');
 
 %% Import functions 
-import suplabel_pkg.*
+import figure_helper.*
 
 clear all
 close all
@@ -19,12 +19,12 @@ subplot(2,2,2); ylabel('ylabel2'); title('Title2')
 subplot(2,2,3); ylabel('ylabel3'); xlabel('xlabel3')
 subplot(2,2,4); ylabel('ylabel4'); xlabel('xlabel4')
 
-[ax1,h1]=suplabel_pkg.suplabel('Super X label');
-[ax2,h2]=suplabel_pkg.suplabel('Super Y label','y');
-[ax3,h2]=suplabel_pkg.suplabel('Super Y label (right)','yy');
-[ax4,h3]=suplabel_pkg.suplabel('Super Title'  ,'t');
+[ax1,h1]=figure_helper.suplabel('Super X label');
+[ax2,h2]=figure_helper.suplabel('Super Y label','y');
+[ax3,h2]=figure_helper.suplabel('Super Y label (right)','yy');
+[ax4,h3]=figure_helper.suplabel('Super Title'  ,'t');
 set(h3,'FontSize',20)
 
-orient portrait
-print('-dps','suplabel_test')
-unix('convert suplabel_test.ps suplabel_test.jpg');
+%orient portrait
+%print('-dps','suplabel_test')
+%unix('convert suplabel_test.ps suplabel_test.jpg');
