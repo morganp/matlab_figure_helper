@@ -4,14 +4,15 @@ clear;
 clear import;
 
 %% Add package to path (+function folder must be on path)
-addpath('../..//package/');
+addpath('../../package/');
 
 %% Import functions 
 import suplabel_pkg.*
 
 clear all
 close all
-figure;clf
+figure;
+clf;
 
 subplot(2,2,1); ylabel('ylabel1'); title('Title1')
 subplot(2,2,2); ylabel('ylabel2'); title('Title2')
