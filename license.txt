@@ -1,3 +1,9 @@
+
+
+eng_xaxis based on http://www.mathworks.co.uk/support/solutions/en/data/1-35XMQ9/?product=ML&solution=1-35XMQ9
+
+suplabel and suptitle functions license:
+
 Copyright (c) 2004, Ben Barrowes
 All rights reserved.
 
